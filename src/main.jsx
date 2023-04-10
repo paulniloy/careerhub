@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  useLoaderData,
 } from "react-router-dom";
 import "./index.css";
 import Home from "./Home/Home";
@@ -19,9 +18,9 @@ const router = createBrowserRouter([
     element: <Home></Home>,
     children:[
       {
-        path: '/',
+        path: "/",
         element: <Front></Front>,
-        loader: ()=> fetch('dev.json')
+        loader: async()=> await fetch('dev.json')
       },
       {
         path: 'stat',
@@ -36,10 +35,9 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: 'viewdetails/:id',
+        path: '/viewdetails/:id',
         element: <Viewdetails></Viewdetails>,
-        // loader: ({params})=> fetch(`${params.id}.json`)
-        loader: ({ params })=> fetch(`${params.id}.json`)
+        loader: async({ params })=> fetch(`${params.id}.json`)
       }
     ]
   },

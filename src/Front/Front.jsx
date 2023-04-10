@@ -9,9 +9,10 @@ const Front = () => {
         fetch('info.json')
         .then(res=>res.json())
         .then(data=>setinfo(data))
-    },[])
+    },[info])
 
-    const information = useLoaderData()
+    const loaddata = useLoaderData()
+
     return (
         <div>
             <div className='flex justify-evenly items-center mt-20'>
@@ -26,7 +27,7 @@ const Front = () => {
             </div>
             <div className='mt-40 grid grid-cols-4 w-3/4 mx-auto gap-40'>
                 {
-                    info.map(information=> <Features key={information.id} information={information}></Features>)
+                    info.map(inf=> <Features key={inf.id} inf={inf}></Features>)
                 }
             </div>
             <div>
@@ -35,7 +36,7 @@ const Front = () => {
             </div>
             <div className='grid grid-cols-2 mt-10'>
                 {
-                    information.map((info)=><User key={info.id} info={info}></User>)
+                    loaddata.map(info=> <User key={info.id} info={info}></User>)
                 }
             </div>
         </div>

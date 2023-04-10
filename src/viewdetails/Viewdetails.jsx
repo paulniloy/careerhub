@@ -75,7 +75,7 @@ const Viewdetails = () => {
                             </div>
                         </article>
                     </div>
-                    <hr />
+            <button className='bg-indigo-200 w-full p-2 mt-5 border border-blue-800 rounded-lg hover:bg-indigo-600 hover:text-white'>Apply Now</button>
                 </article>
             </div>
         </div>
