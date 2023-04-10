@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Features from '../Features/Features';
+import { useLoaderData } from 'react-router-dom';
+import User from '../user/User';
 
 const Front = () => {
     const [info, setinfo] = useState([]);
@@ -8,6 +10,8 @@ const Front = () => {
         .then(res=>res.json())
         .then(data=>setinfo(data))
     },[])
+    const userinformation = useLoaderData()
+    console.log(userinformation);
     return (
         <div>
             <div className='flex justify-evenly items-center mt-20'>
@@ -29,24 +33,10 @@ const Front = () => {
                 <h1 className='text-6xl font-bold text-center mt-20'>Featured Jobs</h1>
                 <h1 className='text-center font-thin mt-2'>Here are listed some Jobs details you need to know in future</h1>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="" />
-                    <h1></h1>
-                    <h1></h1>
-                    <div>
-                        <button></button><button></button>
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <button></button>
-                    </div>
-                </div>
+            <div className='grid grid-cols-2 mt-10'>
+                {
+                    userinformation.map(info=><User key={info.id} info={info}></User>)
+                }
             </div>
         </div>
     );

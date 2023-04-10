@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "image":"google.png",
         "position":"Technical Database Eng.",
         "shortform": "Google LLC",
         "location":"Dhaka, Bangladesh",
@@ -9,7 +9,7 @@
     },
     {
         "id":2,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "image":"netflix.png",
         "position":"Data Analyist",
         "shortform": "Netflix",
         "location":"Dhaka, Bangladesh",
@@ -17,7 +17,7 @@
     },
     {
         "id":3,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "image":"tesla.png",
         "position":"Product Manager",
         "shortform": "Tesla",
         "location":"Dhaka, Bangladesh",
@@ -25,7 +25,7 @@
     },
     {
         "id":4,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "image":"amazon.png",
         "position":"Senior Officer",
         "shortform": "Amazon Shopping",
         "location":"Dhaka, Bangladesh",
@@ -33,17 +33,17 @@
     },
     {
         "id":5,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
-        "position":"Senior Product Manager",
+        "image":"addidas.png",
         "shortform": "Adidas",
+        "position":"Product Manager",
         "location":"Dhaka, Bangladesh",
         "salary": "110k-125k per annum"
     },
     {
         "id":6,
-        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
-        "position":"Starbucks",
-        "shortform": "CEO",
+        "image":"800px-Starbucks_Coffee_Logo.svg.png",
+        "position":"Manager",
+        "shortform": "Sturbucks",
         "location":"Dhaka, Bangladesh",
         "salary": "225k-275k per annum"
     }

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
+  useLoaderData,
 } from "react-router-dom";
 import "./index.css";
 import Home from "./Home/Home";
@@ -18,7 +19,8 @@ const router = createBrowserRouter([
     children:[
       {
         path: '/',
-        element: <Front></Front>
+        element: <Front></Front>,
+        loader: ()=> fetch('dev.json')
       },
       {
         path: 'stat',
