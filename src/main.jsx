@@ -11,6 +11,7 @@ import Stat from "./stat/stat";
 import Aj from "./AboutJob/Aj";
 import Blog from "./Blog/Blog";
 import Front from "./Front/Front";
+import Viewdetails from "./viewdetails/Viewdetails";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
       {
         path: 'blog',
         element: <Blog></Blog>
+      },
+      {
+        path: 'viewdetails/:id',
+        element: <Viewdetails></Viewdetails>,
+        loader: ()=> fetch('dev.json')
       }
     ]
   },

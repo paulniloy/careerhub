@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Features from '../Features/Features';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import User from '../user/User';
 
 const Front = () => {
@@ -10,8 +10,13 @@ const Front = () => {
         .then(res=>res.json())
         .then(data=>setinfo(data))
     },[])
-    const userinformation = useLoaderData()
-    console.log(userinformation);
+
+    const viewdetails = (id)=>{
+        console.log(id);
+    }
+
+
+    const information = useLoaderData()
     return (
         <div>
             <div className='flex justify-evenly items-center mt-20'>
@@ -35,7 +40,7 @@ const Front = () => {
             </div>
             <div className='grid grid-cols-2 mt-10'>
                 {
-                    userinformation.map(info=><User key={info.id} info={info}></User>)
+                    information.map(info=><User key={info.id} info={info}></User>)
                 }
             </div>
         </div>

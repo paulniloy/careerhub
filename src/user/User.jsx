@@ -1,8 +1,9 @@
 import { BuildingLibraryIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const User = ({ info }) => {
-    const {image, position, shortform, location, salary} = info;
+const User = ({ info, viewdetails }) => {
+    const {id,image, position, shortform, location, salary} = info;
 
     return (
         <div className='mx-auto flex flex-col items-start mb-10'>
@@ -28,7 +29,7 @@ const User = ({ info }) => {
                 </div>
             </div>
             <div>
-                <button className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>View details</button>
+                <Link to={`/viewdetails/${id}`} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>View Details</Link>
             </div>
         </div>
     );
