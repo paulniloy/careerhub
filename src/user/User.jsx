@@ -2,7 +2,7 @@ import { BuildingLibraryIcon, CurrencyDollarIcon } from '@heroicons/react/24/sol
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const User = ({ info, viewdetails }) => {
+const User = ({ info }) => {
     const {id,image, position, shortform, location, salary} = info;
 
     return (

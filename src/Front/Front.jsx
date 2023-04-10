@@ -11,11 +11,6 @@ const Front = () => {
         .then(data=>setinfo(data))
     },[])
 
-    const viewdetails = (id)=>{
-        console.log(id);
-    }
-
-
     const information = useLoaderData()
     return (
         <div>
@@ -40,7 +35,7 @@ const Front = () => {
             </div>
             <div className='grid grid-cols-2 mt-10'>
                 {
-                    information.map(info=><User key={info.id} info={info}></User>)
+                    information.map((info)=><User key={info.id} info={info}></User>)
                 }
             </div>
         </div>
