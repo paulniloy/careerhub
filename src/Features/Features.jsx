@@ -1,7 +1,6 @@
 import React from 'react';
 const Features = ({inf}) => {
     const {title, info, pic} = inf
-    console.log(pic)
     return (
         <div>
             <div className='flex justify-center'>

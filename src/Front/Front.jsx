@@ -11,7 +11,12 @@ const Front = () => {
         .then(data=>setinfo(data))
     },[info])
 
-    const loaddata = useLoaderData()
+        const [loaddata, setloaddata] = useState([])
+        useEffect(()=>{
+            fetch('dev.json')
+            .then(res=>res.json())
+            .then(data=>setloaddata(data))
+        },[])
 
     return (
         <div>

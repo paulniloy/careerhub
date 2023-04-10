@@ -29,7 +29,7 @@ const User = ({ info }) => {
                 </div>
             </div>
             <div>
-                <Link to={`/viewdetails/${id}`} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>View Details</Link>
+                <Link to={`viewdetails/${id}`} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>View Details</Link>
             </div>
         </div>
     );

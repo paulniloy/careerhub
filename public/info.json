@@ -1,25 +1,25 @@
 [
     {
-        "id":1,
+        "id":2,
         "title":"Software Eng.",
         "info":"400+ jobs available",
         "pic": "code-solid.svg"
       
     },
     {
-        "id":2,
+        "id":3,
         "title":"Accounting",
         "info":"300+ jobs available",
         "pic": "receipt-solid.svg"
     },
     {
-        "id":3,
+        "id":4,
         "title":"Data Analysist",
         "info":"150+ jobs available",
         "pic": "magnifying-glass-chart-solid.svg"
     },
     {
-        "id":4,
+        "id":5,
         "title":"Lawyer",
         "info":"100+ jobs available",
         "pic": "scale-balanced-solid.svg"

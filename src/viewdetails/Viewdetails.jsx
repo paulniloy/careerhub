@@ -1,10 +1,10 @@
-import { BoltIcon, CurrencyDollarIcon, EnvelopeIcon, PaperAirplaneIcon, PhoneIcon, PowerIcon } from '@heroicons/react/24/solid';
+import { BoltIcon, CurrencyDollarIcon, EnvelopeIcon, PaperAirplaneIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const Viewdetails = () => {
-    const infos = useLoaderData()
-    const { des, res, edu, phone, address, email, experiences, salary, position } = infos[0]
+    const details = useLoaderData()
+    const { des, res, edu, phone, address, email, experiences, salary, position } = details[0]
     return (
         <div>
             <h1 className='text-center text-5xl font-bold mt-20 bg-indigo-100 p-5'>Job Informations</h1>

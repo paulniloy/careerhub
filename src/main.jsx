@@ -19,8 +19,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/",
-        element: <Front></Front>,
-        loader: async()=> await fetch('dev.json')
+        element: <Front></Front>
       },
       {
         path: 'stat',
@@ -35,9 +34,9 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: '/viewdetails/:id',
+        path: 'viewdetails/:id',
         element: <Viewdetails></Viewdetails>,
-        loader: async({ params })=> fetch(`${params.id}.json`)
+        loader: async({ params })=>await fetch(`${params.id}.json`)
       }
     ]
   },
