@@ -1,6 +1,6 @@
 [
     {
-        "id":1,
+        "id":"1",
         "image":"google.png",
         "position":"Technical Database Eng.",
         "shortform": "Google LLC",
@@ -8,7 +8,7 @@
         "salary": "110k-125k per annum"
     },
     {
-        "id":2,
+        "id":"2",
         "image":"netflix.png",
         "position":"Data Analyist",
         "shortform": "Netflix",
@@ -16,7 +16,7 @@
         "salary": "130k-145k per annum"
     },
     {
-        "id":3,
+        "id":"3",
         "image":"tesla.png",
         "position":"Product Manager",
         "shortform": "Tesla",
@@ -24,7 +24,7 @@
         "salary": "175k-200k per annum"
     },
     {
-        "id":4,
+        "id":"4",
         "image":"amazon.png",
         "position":"Senior Officer",
         "shortform": "Amazon Shopping",
@@ -32,7 +32,7 @@
         "salary": "175k-190k per annum"
     },
     {
-        "id":5,
+        "id":"5",
         "image":"addidas.png",
         "shortform": "Adidas",
         "position":"Product Manager",
@@ -40,7 +40,7 @@
         "salary": "110k-125k per annum"
     },
     {
-        "id":6,
+        "id":"6",
         "image":"800px-Starbucks_Coffee_Logo.svg.png",
         "position":"Manager",
         "shortform": "Sturbucks",

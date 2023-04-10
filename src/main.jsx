@@ -11,6 +11,7 @@ import Aj from "./AboutJob/Aj";
 import Blog from "./Blog/Blog";
 import Front from "./Front/Front";
 import Viewdetails from "./viewdetails/Viewdetails";
+import { addtocart, cartloader } from "./functions";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'aj',
-        element: <Aj></Aj>
+        element: <Aj></Aj>,
+        loader: ()=> fetch('dev.json')
       },
       {
         path: 'blog',

@@ -1,10 +1,13 @@
 import { BoltIcon, CurrencyDollarIcon, EnvelopeIcon, PaperAirplaneIcon, PhoneIcon } from '@heroicons/react/24/solid';
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
+import Aj from '../AboutJob/Aj';
+import { useEffect, useState } from 'react';
+import { addtocart } from '../functions';
 
 const Viewdetails = () => {
+
     const details = useLoaderData()
-    const { des, res, edu, phone, address, email, experiences, salary, position } = details[0]
+    const {des, res, edu, phone, address, email, experiences, salary, position } = details[0]
     return (
         <div>
             <h1 className='text-center text-5xl font-bold mt-20 bg-indigo-100 p-5'>Job Informations</h1>
@@ -75,7 +78,7 @@ const Viewdetails = () => {
                             </div>
                         </article>
                     </div>
-            <button className='bg-indigo-200 w-full p-2 mt-5 border border-blue-800 rounded-lg hover:bg-indigo-600 hover:text-white'>Apply Now</button>
+            <button onClick={()=>addtocart(details[0])} className='bg-indigo-200 w-full p-2 mt-5 border border-blue-800 rounded-lg hover:bg-indigo-600 hover:text-white'>Apply Now</button>
                 </article>
             </div>
         </div>
