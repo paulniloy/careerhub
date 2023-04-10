@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { getdatafromlocal } from '../functions';
 import { useLoaderData } from 'react-router-dom';
 import Show from '../detailsshow/Show';
 
 const Aj = () => {
-    const products = useLoaderData()
+    const [products, setproducts] = useState([])
+    useEffect(()=>{
+        fetch('dev.json')
+        .then(res=>res.json())
+        .then(data=>setproducts(data))
+    },[])
     console.log(products);
     const savedproduct = getdatafromlocal()
     console.log(savedproduct);

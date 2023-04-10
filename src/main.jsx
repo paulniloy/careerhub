@@ -28,8 +28,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'aj',
-        element: <Aj></Aj>,
-        loader: ()=> fetch('dev.json')
+        element: <Aj></Aj>
       },
       {
         path: 'blog',
