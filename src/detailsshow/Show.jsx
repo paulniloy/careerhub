@@ -8,7 +8,7 @@ const Show = ({ cart }) => {
         <div className='mx-auto justify-center mt-40 flex items-center mb-10'>
             <div className='flex items-center gap-5 -mt-20'>
                 <div>
-                    <img className='w-40' Src={image} alt="" />
+                    <img className='md:w-40 w-20' Src={image} alt="" />
                 </div>
                 <div>
                     <div>
@@ -19,7 +19,7 @@ const Show = ({ cart }) => {
                         <button className=' text-indigo-400  hover:bg-indigo-600 p-2 rounded-xl hover:text-white border border-indigo-600'>Remote</button>
                         <button className='text-indigo-400 hover:bg-indigo-600 hover:text-white p-2 rounded-xl border border-indigo-600'>Full Time</button>
                     </div>
-                    <div className='flex gap-5 mb-5'>
+                    <div className='flex flex-col md:flex-row gap-5 mb-5'>
                         <div className='flex'>
                             <BuildingLibraryIcon className='w-6'></BuildingLibraryIcon>
                             {location}
@@ -31,7 +31,7 @@ const Show = ({ cart }) => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='ml-5'>
                 <Link to={`viewdetails/${id}`} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>View Details</Link>
             </div>
         </div>
