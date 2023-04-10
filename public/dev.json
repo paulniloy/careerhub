@@ -6,5 +6,45 @@
         "shortform": "Google LLC",
         "location":"Dhaka, Bangladesh",
         "salary": "110k-125k per annum"
+    },
+    {
+        "id":2,
+        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "position":"Data Analyist",
+        "shortform": "Netflix",
+        "location":"Dhaka, Bangladesh",
+        "salary": "130k-145k per annum"
+    },
+    {
+        "id":3,
+        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "position":"Product Manager",
+        "shortform": "Tesla",
+        "location":"Dhaka, Bangladesh",
+        "salary": "175k-200k per annum"
+    },
+    {
+        "id":4,
+        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "position":"Senior Officer",
+        "shortform": "Amazon Shopping",
+        "location":"Dhaka, Bangladesh",
+        "salary": "175k-190k per annum"
+    },
+    {
+        "id":5,
+        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "position":"Senior Product Manager",
+        "shortform": "Adidas",
+        "location":"Dhaka, Bangladesh",
+        "salary": "110k-125k per annum"
+    },
+    {
+        "id":6,
+        "image":"https://play-lh.googleusercontent.com/1-hPxafOxdYpYZEOKzNIkSP43HXCNftVJVttoo4ucl7rsMASXW3Xr6GlXURCubE1tA=w3840-h2160-rw",
+        "position":"Starbucks",
+        "shortform": "CEO",
+        "location":"Dhaka, Bangladesh",
+        "salary": "225k-275k per annum"
     }
 ]
