@@ -1,7 +1,13 @@
-import React from 'react';
-import { BeakerIcon, CommandLineIcon, ComputerDesktopIcon, CreditCardIcon, CurrencyDollarIcon, DocumentChartBarIcon } from '@heroicons/react/24/solid'
+import React, { useEffect, useState } from 'react';
+import Features from '../Features/Features';
 
 const Front = () => {
+    const [info, setinfo] = useState([]);
+    useEffect(()=>{
+        fetch('info.json')
+        .then(res=>res.json())
+        .then(data=>setinfo(data))
+    },[])
     return (
         <div>
             <div className='flex justify-evenly items-center mt-20'>
@@ -14,33 +20,33 @@ const Front = () => {
                     <img className='w-96 hover:scale-110 duration-1000' src="man.jpg" alt="" srcset="" />
                 </div>
             </div>
-            <div className='mt-40'>
-                <div className='flex justify-center'>
-                    <div className='flex flex-col items-center mr-5 duration-500 hover:bg-indigo-200 p-5 hover:rounded-xl'>
-                        <CommandLineIcon className='w-10 fill-indigo-400'></CommandLineIcon>
-                        <h1 className='font-bold'>Software Eng.</h1>
-                        <h1 className='font-thin'>400+ jobs available</h1>
-                    </div>
-                    <div className='mr-5 flex flex-col items-center duration-500 hover:bg-indigo-200 p-5 hover:rounded-xl'>
-                        <CreditCardIcon className='w-10 fill-indigo-400'></CreditCardIcon>
-                        <h1 className='font-bold'>Accounting</h1>
-                        <h1 className='font-thin'>300+ jobs available</h1>
-                    </div>
-                    <div className='mr-5 flex flex-col items-center duration-500 hover:bg-indigo-200 p-5 hover:rounded-xl'>
-                    <ComputerDesktopIcon className='w-10 fill-indigo-400'></ComputerDesktopIcon>
-                        <h1 className='font-bold'>Data Analysist</h1>
-                        <h1 className='font-thin'>150+ jobs available</h1>
-                    </div>
-                    <div className='flex flex-col items-center duration-500 hover:bg-indigo-200 p-5 hover:rounded-xl'>
-                        <CurrencyDollarIcon className='w-10 fill-indigo-400'></CurrencyDollarIcon>
-                        <h1 className='font-bold'>Lawyer</h1>
-                        <h1 className='font-thin'>100+ jobs available</h1>
-                    </div>
-                </div>
+            <div className='mt-40 grid grid-cols-4 w-3/4 mx-auto gap-40'>
+                {
+                    info.map(information=> <Features key={information.id} information={information}></Features>)
+                }
             </div>
             <div>
                 <h1 className='text-6xl font-bold text-center mt-20'>Featured Jobs</h1>
                 <h1 className='text-center font-thin mt-2'>Here are listed some Jobs details you need to know in future</h1>
+            </div>
+            <div>
+                <div>
+                    <img src="" alt="" />
+                    <h1></h1>
+                    <h1></h1>
+                    <div>
+                        <button></button><button></button>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <button></button>
+                    </div>
+                </div>
             </div>
         </div>
     );
