@@ -6,7 +6,6 @@ import { useLoaderData } from 'react-router-dom';
 const Aj = () => {
 
     const products = useLoaderData()
-
     const [cart, setcart] = useState([])
     useEffect(() => {
         let arr = [];
