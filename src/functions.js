@@ -37,7 +37,7 @@ const cartloader = async()=>{
         cart.push(previous)
         console.log(cart);
     }
-
+    console.log(product);
     return {product, cart}
 }
 
@@ -53,6 +53,8 @@ const showlimited =  (data) =>{
     return sliced
 }
 
+const filter=(distance)=>{
+    console.log(distance);
+}
 
-
-export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited}
+export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited, filter}

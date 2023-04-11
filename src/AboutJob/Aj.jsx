@@ -26,7 +26,7 @@ const Aj = () => {
     return (
         <div>
             {
-                cart.map(cart=> <Show key={cart.id} cart={cart}></Show>)
+                cart.map(cart=> <Show products={products} key={cart.id} cart={cart}></Show>)
             }
         </div>
     );

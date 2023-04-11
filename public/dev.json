@@ -4,8 +4,9 @@
         "image":"google.png",
         "position":"Technical Database Eng.",
         "shortform": "Google LLC",
-        "location":"Dhaka, Bangladesh",
-        "salary": "110k-125k per annum"
+        "location":"Dehli, India",
+        "salary": "110k-125k per annum",
+        "distance": "Remote"
     },
     {
         "id":"2",
@@ -13,15 +14,17 @@
         "position":"Data Analyist",
         "shortform": "Netflix",
         "location":"Dhaka, Bangladesh",
-        "salary": "130k-145k per annum"
+        "salary": "130k-145k per annum",
+        "distance": "Onsite"
     },
     {
         "id":"3",
         "image":"tesla.png",
         "position":"Product Manager",
         "shortform": "Tesla",
-        "location":"Dhaka, Bangladesh",
-        "salary": "175k-200k per annum"
+        "location":"Montreal, Canada",
+        "salary": "175k-200k per annum",
+        "distance": "Remote"
     },
     {
         "id":"4",
@@ -29,15 +32,17 @@
         "position":"Senior Officer",
         "shortform": "Amazon Shopping",
         "location":"Dhaka, Bangladesh",
-        "salary": "175k-190k per annum"
+        "salary": "175k-190k per annum",
+        "distance": "Onsite"
     },
     {
         "id":"5",
         "image":"addidas.png",
         "shortform": "Adidas",
         "position":"Product Manager",
-        "location":"Dhaka, Bangladesh",
-        "salary": "110k-125k per annum"
+        "location":"NY, USA",
+        "salary": "110k-125k per annum",
+        "distance": "Remote"
     },
     {
         "id":"6",
@@ -45,6 +50,7 @@
         "position":"Manager",
         "shortform": "Sturbucks",
         "location":"Dhaka, Bangladesh",
-        "salary": "225k-275k per annum"
+        "salary": "225k-275k per annum",
+        "distance": "Onsite"
     }
 ]
