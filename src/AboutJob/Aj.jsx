@@ -48,8 +48,8 @@ const Aj = () => {
                 <h1 className='text-center text-5xl font-bold mt-20 bg-indigo-100 p-5'>Applied Job</h1>
             </div>
             <div className='flex justify-center gap-10 mt-10'>
-                <button onClick={()=>setcart(filtered)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>Remote</button>
-                <button onClick={()=>setcart(onsite)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>Onsite</button>
+                <button onClick={async ()=>setcart(filtered)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>Remote</button>
+                <button onClick={async ()=>setcart(onsite)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>Onsite</button>
             </div>
             {
                 cart.map(cart => <Show key={cart.id} cart={cart}></Show>)

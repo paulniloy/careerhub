@@ -12,7 +12,7 @@ const Show = ({ cart }) => {
             <div className='mx-auto justify-center mt-40 flex items-center mb-10'>
             <div className='flex items-center gap-5 -mt-20'>
                 <div>
-                    <img className='md:w-40 w-20' Src={image} alt="" />
+                    <img className='md:w-40 w-20' src={image} alt="" />
                 </div>
                 <div>
                     <div>
