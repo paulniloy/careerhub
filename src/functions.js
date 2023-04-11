@@ -41,10 +41,9 @@ const cartloader = async()=>{
     return {product, cart}
 }
 
-const splitdata = async()=>{
-    const load = await fetch('dev.json');
-    const data = await load.json();
-    return showlimited(data)
+const splitdata = (data)=>{
+    const slice = data.slice(0,4)
+    console.log(slice);
 }
 const showlimited =  (data) =>{
     if(data.length>4){

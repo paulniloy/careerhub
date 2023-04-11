@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Head.css'
 import { ArrowSmallRightIcon } from '@heroicons/react/24/solid';
-import { splitdata } from '../functions';
 
 const Head = () => {
     return (
@@ -11,11 +10,10 @@ const Head = () => {
                 <h1 className='text-3xl font-bold'>CareerCoder</h1>
             </div>
             <div className='p-5 font-medium flex-col md:flex-row'>
-                <Link className='mr-5' to="/">home</Link>
+                <Link className='mr-5' to="/">Home</Link>
                 <Link className='mr-5' to="/stat">Statistic</Link>
                 <Link className='mr-5' to="/aj">Applied Job</Link>
                 <Link to="/blog">Blog</Link>
-                <button onClick={splitdata}>see data</button>
             </div>
             <div className='flex bg-indigo-400 items-center rounded-xl hover:bg-indigo-600 px-5'>
                 <div className=''>

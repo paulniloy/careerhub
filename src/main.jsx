@@ -12,7 +12,6 @@ import Blog from "./Blog/Blog";
 import Front from "./Front/Front";
 import Viewdetails from "./viewdetails/Viewdetails";
 import { addtocart, cartloader, splitdata } from "./functions";
-import Details from "./Details/Details"
 
 const router = createBrowserRouter([
   {
