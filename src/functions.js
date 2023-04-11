@@ -40,4 +40,19 @@ const cartloader = async()=>{
 
     return {product, cart}
 }
-export {addtocart, cartloader, getdatafromlocal}
+
+const splitdata = async()=>{
+    const load = await fetch('dev.json');
+    const data = await load.json();
+    return showlimited(data)
+}
+const showlimited =  (data) =>{
+    if(data.length>4){
+        const sliced = data.slice(0,4)
+    }
+    return sliced
+}
+
+
+
+export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited}

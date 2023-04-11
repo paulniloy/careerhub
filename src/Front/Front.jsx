@@ -18,11 +18,6 @@ const Front = () => {
             .then(data=>setloaddata(data))
         },[])
 
-        // const addtocart =(id)=>
-        //     {
-        //         console.log(id);
-        //     }
-
     return (
         <div>
             <div className='flex flex-col md:flex-row justify-evenly items-center mt-20'>

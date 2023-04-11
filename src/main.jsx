@@ -11,7 +11,8 @@ import Aj from "./AboutJob/Aj";
 import Blog from "./Blog/Blog";
 import Front from "./Front/Front";
 import Viewdetails from "./viewdetails/Viewdetails";
-import { addtocart, cartloader } from "./functions";
+import { addtocart, cartloader, splitdata } from "./functions";
+import Limited from "./Limited/Limited";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         path: 'viewdetails/:id',
         element: <Viewdetails></Viewdetails>,
         loader: async({ params })=>await fetch(`${params.id}.json`)
+      },
+      {
+        path: '/limited',
+        element: <Limited></Limited>
       }
     ]
   },

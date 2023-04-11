@@ -1,0 +1,34 @@
+[
+    {
+        "id":"1",
+        "image":"google.png",
+        "position":"Technical Database Eng.",
+        "shortform": "Google LLC",
+        "location":"Dhaka, Bangladesh",
+        "salary": "110k-125k per annum"
+    },
+    {
+        "id":"2",
+        "image":"netflix.png",
+        "position":"Data Analyist",
+        "shortform": "Netflix",
+        "location":"Dhaka, Bangladesh",
+        "salary": "130k-145k per annum"
+    },
+    {
+        "id":"3",
+        "image":"tesla.png",
+        "position":"Product Manager",
+        "shortform": "Tesla",
+        "location":"Dhaka, Bangladesh",
+        "salary": "175k-200k per annum"
+    },
+    {
+        "id":"4",
+        "image":"amazon.png",
+        "position":"Senior Officer",
+        "shortform": "Amazon Shopping",
+        "location":"Dhaka, Bangladesh",
+        "salary": "175k-190k per annum"
+    }
+]
