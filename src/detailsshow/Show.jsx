@@ -3,8 +3,9 @@ import { BuildingLibraryIcon, CurrencyDollarIcon } from '@heroicons/react/24/sol
 import { Link } from 'react-router-dom';
 // import { filter } from '../functions';
 
-const Show = ({ cart, products }) => {
+const Show = ({ cart }) => {
     const { id, image, position, shortform, location, salary, distance } = cart;
+
 
     return (
         <div>

@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Fronttwo = () => {
+const Fronttwo = ({newnew}) => {
     return (
         <div>
+            helo
             
         </div>
     );

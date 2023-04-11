@@ -35,9 +35,7 @@ const cartloader = async()=>{
     for(let id in savedcart){
         const previous = product.find(pd=> pd.id === id);
         cart.push(previous)
-        console.log(cart);
     }
-    console.log(product);
     return {product, cart}
 }
 
@@ -56,4 +54,12 @@ const filter=(distance)=>{
     console.log(distance);
 }
 
-export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited, filter}
+const getproductdata=()=>{
+    fetch('dev.json')
+    .then(res=>res.json())
+    .then(data=> data);
+}
+
+
+
+export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited, filter, getproductdata}
