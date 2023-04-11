@@ -10,17 +10,19 @@ const Front = () => {
         .then(res=>res.json())
         .then(data=>setinfo(data))
     },[info])
+    const [slice, setslice] = useState([])
+    useEffect(()=>{
+        fetch('chatdata.json')
+        .then(res=>res.json())
+        .then(data=>setslice(data))
+    },[])
 
         const [loaddata, setloaddata] = useState([])
-        const [slice, setslice] = useState([])
         useEffect(()=>{
             fetch('dev.json')
             .then(res=>res.json())
             .then(data=>setloaddata(data))
-            const sliced = loaddata.slice(0,4)
-            setslice(sliced);
-            console.log(sliced);
-        },[loaddata])
+        },[])
 
     return (
         <div>
@@ -47,9 +49,12 @@ const Front = () => {
                 {
                     slice.map(info=> <User key={info.id} info={info}></User>)
                 }
+                {/* {
+                    (slice === true) ? `${slice.map(info=><User key={info.id} info={info}></User>)}` : `${loaddata.map(info=><User key={info.id} info={info}></User>)}`
+                } */}
             </div>
             <div className='flex justify-center'>
-            <button className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>show all</button>
+            <button onClick={()=>setslice(loaddata)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>show all</button>
         </div>
         </div>
     );
