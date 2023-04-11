@@ -53,9 +53,11 @@ const Front = () => {
                     (slice === true) ? `${slice.map(info=><User key={info.id} info={info}></User>)}` : `${loaddata.map(info=><User key={info.id} info={info}></User>)}`
                 } */}
             </div>
+            <div className={slice.length > 4 ? "hidden" : "tex-blue"}>
             <div className='flex justify-center'>
-            <button onClick={()=>setslice(loaddata)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto'>show all</button>
-        </div>
+            <button onClick={()=>setslice(loaddata)} className='bg-indigo-400 hover:bg-indigo-600 p-2 rounded-xl text-white mb-auto  '>show all</button>
+            </div>
+            </div>
         </div>
     );
 };
