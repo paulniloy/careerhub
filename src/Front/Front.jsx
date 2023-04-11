@@ -33,7 +33,7 @@ const Front = () => {
 
                 </div>
                 <div>
-                    <img className='w-96 hover:scale-110 duration-1000' src="man.jpg" alt="" srcset="" />
+                    <img className='w-96 hover:scale-110 duration-1000' src="man.jpg" />
                 </div>
             </div>
             <div className='mt-20 md:mt-40 grid md:grid-cols-4 w-3/4 mx-auto md:gap-40'>

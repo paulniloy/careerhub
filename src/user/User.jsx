@@ -8,7 +8,7 @@ const User = ({ info }) => {
     return (
             <div className='mx-auto flex flex-col items-start mb-10'>
             <div>
-                <img className='w-96 md:w-40' Src={image} alt="" />
+                <img className='w-96 md:w-40' Src={image}/>
             </div>
             <div className=''>
                 <div className=''>
