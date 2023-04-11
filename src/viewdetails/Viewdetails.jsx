@@ -11,7 +11,7 @@ const Viewdetails = () => {
     return (
         <div>
             <h1 className='text-center text-5xl font-bold mt-20 bg-indigo-100 p-5'>Job Informations</h1>
-            <div className='flex justify-evenly mt-20 mb-20'>
+            <div className='flex justify-evenly mt-20 mb-20 flex-col md:flex-row items-center'>
                 <article className='w-1/2'>
                     <div>
                         <h1 className='font-bold'>Job Description :</h1>
@@ -31,7 +31,7 @@ const Viewdetails = () => {
                     </div>
                 </article>
                 <article>
-                    <h1>Job Details</h1>
+                    <h1 className='text-center md:text-start mt-5'>Job Details</h1>
                     <hr />
                     <div className='mt-5 mb-5 p-2'>
                         <article className='flex'>
