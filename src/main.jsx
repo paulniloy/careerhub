@@ -11,6 +11,7 @@ import Aj from "./AboutJob/Aj";
 import Blog from "./Blog/Blog";
 import Front from "./Front/Front";
 import Viewdetails from "./viewdetails/Viewdetails";
+import Error from "./error/Error";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: 'aj',
         element: <Aj></Aj>,
-        loader: async()=> await fetch('dev.json')
+        loader: async()=> await fetch('/dev.json')
       },
       {
         path: 'blog',
@@ -37,7 +38,11 @@ const router = createBrowserRouter([
       {
         path: 'viewdetails/:id',
         element: <Viewdetails></Viewdetails>,
-        loader: async({ params })=>await fetch(`${params.id}.json`)
+        loader: async({ params })=>await fetch(`/${params.id}.json`)
+      },
+      {
+        path: '*',
+        element: <Error></Error>
       }
     ]
   },

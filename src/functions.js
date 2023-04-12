@@ -61,5 +61,4 @@ const getproductdata=()=>{
 }
 
 
-
-export {addtocart, cartloader, getdatafromlocal, splitdata, showlimited, filter, getproductdata}
+export {addtocart,cartloader, getdatafromlocal, splitdata, showlimited, filter, getproductdata}
