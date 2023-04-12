@@ -30,6 +30,7 @@ const Front = () => {
                 <div className='mb-10'>
                     <h1 className='text-4xl font-bold'>Dream job<br /> Can be <span className='text-blue-700'>achieve</span> <br />Through hard work</h1>
                     <h3 className='mt-5'>Welcome to our page to search your dream Job and <br /> stay connected.. Challenge yourself and succeed in life.</h3>
+                    <button className='bg-indigo-400 hover:bg-indigo-600 mt-5 p-5 rounded-xl font-bold text-white'>Get started</button>
 
                 </div>
                 <div>
